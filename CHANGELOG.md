@@ -1,5 +1,10 @@
 # What's New?
 
+## 1.25
+
+Bug Fixes:
+- Fix CMake syntax highlighting keyword collisions in argument lists. Target names, property values, and filenames whose basename collides with a command/property keyword (for example `add_library(Log ...)`, `target_sources(... test.cpp ...)`, or `my_function(type.cpp value.h)`) are no longer split or colored as those keywords by broad top-level grammar rules. `add_library`/`add_executable` target-type keywords and `set_target_properties` `PROPERTIES`/property-name arguments are also now scoped correctly. [#5083](https://github.com/microsoft/vscode-cmake-tools/issues/5083)
+
 ## 1.24
 
 Features:
