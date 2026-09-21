@@ -1,5 +1,10 @@
 # What's New?
 
+## 1.25
+
+Bug Fixes:
+- Fix Test Explorer "build before run" skipping the build for CTest tests whose command is a wrapper program instead of a known CMake executable target. Such tests now fall back to the project's default build while tests that map directly to executable targets still use the targeted build. [#5094](https://github.com/microsoft/vscode-cmake-tools/issues/5094)
+
 ## 1.24
 
 Features:
